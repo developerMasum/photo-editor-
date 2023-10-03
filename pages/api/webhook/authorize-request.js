@@ -1,7 +1,7 @@
 import { decode } from 'next-auth/jwt'
 
 const authorizeRequest = async (req, res) => {
-  const authToken = req.body.headers['mullayan-next-auth-token']
+  const authToken = req.body.headers['solo-editor-next-auth-token']
 
   if (authToken) {
     try {

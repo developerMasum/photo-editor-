@@ -18,7 +18,7 @@ const authLink = setContext(async (_, { headers }) => {
     headers: {
       ...headers,
       ...(nextAuthToken && {
-        'mullayan-next-auth-token': nextAuthToken,
+        'solo-editor-next-auth-token': nextAuthToken,
       }),
     },
   }
@@ -38,7 +38,7 @@ function getWsLink({ url }) {
             return {
               headers: {
                 ...(nextAuthToken && {
-                  'mullayan-next-auth-token': nextAuthToken,
+                  'solo-editor-next-auth-token': nextAuthToken,
                 }),
               },
             }
